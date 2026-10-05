@@ -15,18 +15,32 @@ public class Matriser {
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
+			String resultat = "";
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-		
+			for (int i = 0; i < matrise.length; i++) {
+				for (int j = 0; j < matrise[i].length; j++) {
+					resultat += matrise[i][j] + " ";
+				}
+				resultat += "\n";
+			}
+
+			return resultat;
 	}
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
-	
+
+			int[][] resultat = new int[matrise.length][];
+
+			for (int i = 0; i < matrise.length; i++) {
+				resultat[i] = new int[matrise[i].length];
+
+				for (int j = 0; j < matrise[i].length; j++) {
+					resultat[i][j] = matrise[i][j] * tall;
+				}
+			}
+
+			return resultat;
 	}
 
 	// d)
