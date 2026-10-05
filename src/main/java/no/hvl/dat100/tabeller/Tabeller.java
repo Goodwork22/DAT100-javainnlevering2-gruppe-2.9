@@ -35,13 +35,15 @@ public class Tabeller {
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-		for(int verdi: tabell) {
-			if(verdi == tall); {
+		for(int verdi : tabell) {
+			if (verdi == tall){
 				return true;
 			}
 		}
 		return false;
-	}
+		}
+
+
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
