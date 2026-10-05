@@ -47,9 +47,15 @@ public class Tabeller {
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
+		int posisjon = 0;
+		for(int verdi : tabell){
+			if(verdi == tall) {
+				return posisjon;
+			}
+			posisjon = posisjon + 1;
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
+		}
+		return -1;
 	}
 
 	// f)
