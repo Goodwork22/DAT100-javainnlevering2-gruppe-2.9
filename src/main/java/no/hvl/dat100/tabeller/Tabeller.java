@@ -78,9 +78,12 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
+		int[] samensatttabell = new int[tabell1.length + tabell2.length];
+		System.arraycopy(tabell1,0 ,samensatttabell , 0, tabell1.length);
+		System.arraycopy(tabell2 , 0, samensatttabell, tabell1.length ,tabell2.length);
+		return samensatttabell;
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
+
 
 	}
 }
