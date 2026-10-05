@@ -15,7 +15,7 @@ public class Tabeller {
 		for (int i = 0; i < tabell.length; i++) {
 			tekst += tabell[i];
 
-			if (i != 0) {
+			if (i > 0) {
 				tekst += ",";
 			}
 		}
