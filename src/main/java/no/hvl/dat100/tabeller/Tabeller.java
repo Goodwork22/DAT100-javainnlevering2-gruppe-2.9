@@ -11,9 +11,16 @@ public class Tabeller {
 
 	// b)
 	public static String tilStreng(int[] tabell) {
+		String tekst = "[";
+		for (int i = 0; i < tabell.length; i++) {
+			tekst += tabell[i];
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+			if (i != 0) {
+				tekst += ",";
+			}
+		}
+		tekst += "]";
+		return tekst;
 	}
 
 	// c)
