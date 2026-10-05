@@ -13,11 +13,11 @@ public class Tabeller {
 	public static String tilStreng(int[] tabell) {
 		String tekst = "[";
 		for (int i = 0; i < tabell.length; i++) {
-			tekst += tabell[i];
-
 			if (i > 0) {
 				tekst += ",";
 			}
+			tekst += tabell[i];
+
 		}
 		tekst += "]";
 		return tekst;
@@ -71,7 +71,7 @@ public class Tabeller {
 	}
 	// g)
 	public static boolean erSortert(int[] tabell) {
-		for(int i = 0;i < tabell.length; i++) {
+		for(int i = 0;i < tabell.length - 1; i++) {
 			if(tabell[i] > tabell[i + 1]) {
 				return false;
 			}
